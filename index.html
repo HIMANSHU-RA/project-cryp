@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+	
+
+	<title class="title">Encrypt and Decrypt Text Content</title>
+	<link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+	<!-- <script src="text2.js"></script> -->
+
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/water.css">
+	<!-- <link rel="stylesheet" href="app.css"> -->
+</head>
+<body>
+	<form class="wrapper">
+
+		<h1 class="line">Encrypt and Decrypt Text Content</h1>
+
+		<details class="summary" class="color1">
+			<summary>
+				What is this?
+			</summary>
+
+			<div>
+				<p>
+					It's a simple script that can be used to encrypt/decrypt text contents using a passphrase,
+					all done in the browser, using <a href="https://developer.mozilla.org/en-US/docs/Web/API/Web_Crypto_API" target="_blank">WebCrypto API</a>.
+				</p>
+
+				
+			</div>
+		</details>
+
+		<label for="content" class="color1">
+			<span class="cont">Content</span>
+
+			<textarea id="content" cols="60" rows="16" class="block"></textarea>
+		</label>
+
+		<label for="pass" class="line1" class="color1">
+			<span class="line2">Passphrase</span>
+
+			<input type="text" id="pass" class="block">
+		</label>
+
+		<div class="buttons">
+			<button id="Encrypt" class="button" class="button1">Encrypt</button>
+			<button id="Decrypt" class="button">Decrypt</button>
+		</div>
+
+		<div id="encrypted" class="hidden wrap encrypted"></div>
+		<div id="decrypted" class="hidden wrap decrypted"></div>
+	</form>
+
+	<script src="text2.js" defer></script>
+</body>
+</html>
